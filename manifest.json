@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Download Organizer",
+    "version": "1.0",
+    "permissions": [
+      "downloads",
+      "storage"
+      
+      
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+  },
+  
+  
+  "icons": {
+    "16": "./img/FILE ORGANIZER 16.png",
+    "48": "./img/FILE ORGANIZER 48.png",
+    "128": "./img/FILE ORGANIZER 128.png"
+  }
+
+  }
+  

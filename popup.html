@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>File Organizer Extension</title>
+  <style>
+    body {
+      width: 200px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    #statusMessage {
+      margin-top: 10px;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>File Organizer Settings</h2>
+  <form id="settingsForm">
+    <label for="imagesDestination">Images Destination:</label>
+    <input type="text" id="imagesDestination" name="imagesDestination">
+
+    <label for="documentsDestination">Documents Destination:</label>
+    <input type="text" id="documentsDestination" name="documentsDestination">
+
+    <label for="musicDestination">Music Destination:</label>
+    <input type="text" id="musicDestination" name="musicDestination">
+
+    <label for="videosDestination">Videos Destination:</label>
+    <input type="text" id="videosDestination" name="videosDestination">
+
+    <label for="archivesDestination">Archives Destination:</label>
+    <input type="text" id="archivesDestination" name="archivesDestination">
+
+    <label for="otherDestination">Others Destination:</label>
+    <input type="text" id="otherDestination" name="otherDestination">
+
+    <!-- Add more fields for other file types if needed -->
+
+    <input type="submit" value="Save Settings">
+    <p id="statusMessage"></p>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
